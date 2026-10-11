@@ -26,31 +26,47 @@
 <body>
 
 <h1>Privacy Policy — The Move</h1>
-<p class="updated">Last updated: 29 September 2026</p>
+<p class="updated">Last updated: 10 October 2026</p>
 
 <p>The Move is operated by The Move.app LLC ("we", "us"). This policy explains what we collect, why, and what you can do about it.</p>
+
+<h2>Using the app without an account</h2>
+
+<p>You can browse venues, wait times, and the map without creating an account. While you do, we do not ask for your name, email, or date of birth. We record which screens you open using a random identifier stored on your device, which is not linked to who you are.</p>
+
+<p>If you have already allowed The Move to use your location, the app uses it to pick the nearest city to show you. That choice is worked out on your phone; your location is not sent to us for it.</p>
+
+<p>Features that involve other people or your own activity — checking in, reporting a line, following venues, posting, friends, and messages — need an account.</p>
 
 <h2>What we collect</h2>
 
 <p><strong>Account information.</strong> Your email address, name, username, and — if you add them — a profile photo and bio. Email is used to sign you in and to contact you about your account.</p>
 
+<p><strong>Signing in with Apple or Google.</strong> If you sign in with Apple or Google instead of an email and password, we receive your name and email address from them. With Sign in with Apple you can choose to hide your email, in which case we receive a private relay address from Apple instead. We never receive your Apple or Google password.</p>
+
 <p><strong>Date of birth, city, and preferences.</strong> When you first open the app, we ask for your date of birth, the city you go out in, and the kinds of places you like — for example "Dive", "Live music", or "Brunch". Your date of birth is used only to confirm that you are 18 or older, and it is never shown to anyone. Your city and preferences are used to choose which venues you follow when you start, so your feed is not empty. Your date of birth is required; your preferences are optional, and you can unfollow any venue at any time.</p>
 
 <p><strong>Location.</strong> When you check in at a venue or report a line, we ask for your device location and check that you are within 125 metres of that venue. This is what keeps wait times honest — it stops people reporting on places they are not at.</p>
+
+<p>If you are checked in somewhere, the app checks your location again when you next open it and checks you out if you have left. It also uses your location, if you have allowed it, to pick the nearest city to show you — worked out on your phone, not sent to us.</p>
 
 <p>We only request location while you are using the app. We do not track you in the background.</p>
 
 <p>The coordinates attached to a check-in or report are deleted automatically within a short period. We keep the fact that you were at a venue; we do not keep a history of where your phone has been.</p>
 
-<p><strong>Photos.</strong> When you report a line, the app takes a photo of the line and, optionally, a front-facing photo of you. Photos you post to stories are also stored.</p>
+<p><strong>Photos.</strong> When you report a line, the app takes a photo of the line and, optionally, a front-facing photo of you. Photos you post to stories, and your profile photo, are also stored.</p>
 
-<p><strong>Content you create.</strong> Posts, comments, reactions, direct messages, check-ins, and line reports.</p>
+<p><strong>Camera and photo library.</strong> The camera is used only when you take a photo in the app. When you choose a photo for your profile or a story, the app receives only the photo you pick — it cannot see the rest of your library. If you save one of your own photos to your phone, the app asks only for permission to add photos, not to read them.</p>
+
+<p><strong>Content you create.</strong> Posts, comments, reactions, direct messages, check-ins, line reports, the venues you follow or bookmark, and the points you earn.</p>
+
+<p><strong>Safety reports and blocks.</strong> If you report content or a person, we store the report, the reason you gave, and a copy of what was reported. If you block someone, we store that so they stay hidden from you.</p>
 
 <p><strong>Friends and connections.</strong> Who you are friends with, friend requests, and your visibility settings.</p>
 
-<p><strong>Device information for notifications.</strong> A push notification token, so we can send you alerts you have opted into. You control which notifications you receive in Settings.</p>
+<p><strong>Device information for notifications.</strong> A push notification token, so we can send you alerts you have opted into. You control which notifications you receive in Settings. Check-in reminders after you report a line are scheduled on your phone and are not sent through our servers.</p>
 
-<p><strong>Usage analytics.</strong> We record which screens you open and which actions you take, to understand how the app is used. This is tied to your account.</p>
+<p><strong>Usage analytics.</strong> We record which screens you open and which actions you take, to understand how the app is used. Before you sign in this uses a random identifier stored on your device; once you sign in it is linked to your account and email address. We do not use your network address to work out where you are for analytics.</p>
 
 <h2>Before you have an account</h2>
 
@@ -62,7 +78,7 @@
 
 <h2>What we do not collect</h2>
 
-<p>We do not collect your contacts, your background location, your browsing outside the app, or payment information. We do not sell your data to anyone.</p>
+<p>We do not collect your contacts, your background location, your browsing outside the app, the rest of your photo library, or payment information. We do not sell or share your data for advertising, and we do not track you across other companies' apps or websites.</p>
 
 <h2>How long we keep it</h2>
 
@@ -74,6 +90,8 @@
   <tr><td>Posts, comments, messages</td><td>Until you delete them or your account</td></tr>
   <tr><td>Account information</td><td>Until you delete your account</td></tr>
   <tr><td>Date of birth, city, and preferences</td><td>Until you delete your account</td></tr>
+  <tr><td>Blocks, follows, bookmarks, and points</td><td>Until you remove them or delete your account</td></tr>
+  <tr><td>Safety reports and reported content</td><td>Kept as a safety record, including after an account is deleted</td></tr>
   <tr><td>Waitlist entry and referral link taps</td><td>Until you ask us to remove it</td></tr>
 </table>
 
@@ -82,11 +100,12 @@
 <p>We use a small number of service providers to run the app:</p>
 <ul>
   <li><strong>Supabase</strong> — stores our database, files, and handles sign-in</li>
-  <li><strong>Expo</strong> — delivers push notifications to your device</li>
+  <li><strong>Apple</strong> — Sign in with Apple, and delivery of push notifications to iPhones</li>
+  <li><strong>Google</strong> — Sign in with Google; and Google's Places service, which we use to fetch venue photos and addresses (this part does not involve your personal data)</li>
+  <li><strong>Expo</strong> — sends push notifications to Apple for delivery to your device</li>
   <li><strong>Mixpanel</strong> — usage analytics</li>
-  <li><strong>Google</strong> — we use Google's Places service to fetch venue photos and addresses. This does not involve your personal data.</li>
   <li><strong>Resend</strong> — sends account and waitlist emails</li>
-  <li><strong>OpenAI</strong> — checks photos and text you post for objectionable content before they appear in the app</li>
+  <li><strong>OpenAI</strong> — checks photos you post for objectionable content</li>
 </ul>
 
 <p>Each of these acts on our instructions. We do not sell or rent your information.</p>
@@ -95,7 +114,9 @@
 
 <h2>Content moderation</h2>
 
-<p>Photos and text you post are checked automatically for objectionable content before they appear in the app. This check is performed by OpenAI's moderation service. The photo or text is sent for analysis and is not used to train anyone's models.</p>
+<p>Photos you post — line photos, selfies, stories, and profile photos — are checked automatically for objectionable content. This check is performed by OpenAI's moderation service. The photo is sent for analysis and is not used to train anyone's models.</p>
+
+<p>Text you post — comments, story captions, your name, username, and bio — is checked against our own list of prohibited terms. That check happens on our servers and is not sent to any outside service. Direct messages are not checked.</p>
 
 <p>We do this because we are required to keep objectionable material off the app, and because people in your photos did not choose to be there. You agree to this check when you accept our terms — either when you create an account, or when you are asked to accept updated terms if you already have one. We do not send anything for checking before you have accepted.</p>
 
@@ -105,7 +126,7 @@
 
 <h2>What other people can see</h2>
 
-<p><strong>Your profile</strong> — name, username, photo, and bio — is visible to other users.</p>
+<p><strong>Your profile</strong> — name, username, photo, and bio — is visible to other users who are signed in. People using the app without an account see venue information only, never your profile, posts, or photos.</p>
 
 <p><strong>Your posts, line reports, and stories</strong> are visible according to where you post them.</p>
 
@@ -121,7 +142,7 @@
 
 <p>Your account is deactivated immediately and you become invisible to everyone. After 30 days it is permanently deleted, along with your posts, photos, line reports, check-ins, friendships, points, date of birth, and preferences. Signing in during those 30 days cancels the deletion.</p>
 
-<p><strong>One thing survives.</strong> Messages you sent stay visible to the people you sent them to, shown as coming from a deleted user. We do this so the other person's conversation still makes sense. Your name, photo, and username are removed from them.</p>
+<p><strong>Two things survive.</strong> Messages you sent stay visible to the people you sent them to, shown as coming from a deleted user. We do this so the other person's conversation still makes sense. Your name, photo, and username are removed from them. Safety reports — ones you made, and ones made about your content — are kept as a safety record.</p>
 
 <h2>Your rights</h2>
 
